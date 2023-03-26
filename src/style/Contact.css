@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#icone2 {
+  width: 2.5vw;
+  position: absolute;
+  margin-left: 1.95vh;
+}
+.phone {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.65vh;
+}
+.facebook {
+  display: flex;
+  align-items: center;
+}
+.mail {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.65vh;
+}
+.fax {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.65vh;
+}
+.localisation {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2.65vh;
+}
+.contact {
+    display:block;
+  flex-direction: column;
+  line-height: 168%;
+  background-color: rgb(105, 210, 79);
+  width: 50vw;
+  padding-bottom: 4vh;
+ border-top-left-radius: 20px;
+ border-bottom-left-radius: 20px;
+ /* height: auto; */
+
+
+}
+h5 {
+  margin-left: 6.5vw;
+  margin-right: 6.5vw;
+  display: flex;
+  justify-content: flex-start;
+  font-size:100%;
+  flex-wrap: wrap;
+}
+label{
+  font-size: 120%;
+}
+.title {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5%;
+  text-align: start;
+  font-size: 120%;
+}
+.contactez-nous {
+  display: flex;
+  margin-top: 8%;
+  justify-content: center;
+ /* height: 90%; */
+ width: 100%;
+ margin-bottom: 10%;
+
+}
+.formulaire {
+  padding-top: 3.32vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+
+  line-height: 5.30vh;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  background-color: #f4f4f4;
+  /* height: 64.4vh; */
+  width: 45vw;
+  border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+
+}
+#input {
+  width: 26vw;
+}
+#input_message {
+  width: 100%;
+  height: 20vh;
+}
+#nn{
+    padding-bottom: 3vh;
+}
+.pp{
+    margin-top: 13.26vh;
+    font-family: "Raleway", sans-serif;
+
+}
+button{
+    width: 40%;
+    display: flex;;
+    justify-content: center;
+    margin-top: 2vh;
+height: 4vh;
+align-items: center;
+}
+.nos-p{
+  width: 100%;
+}

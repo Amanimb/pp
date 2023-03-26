@@ -1,0 +1,268 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.navbar {
+  position: relative;
+  z-index: 999999999;
+  padding: 0 2.6vw;
+  align-items: center;
+  display: flex;
+  background-color: #fbae26;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  /* border-bottom-right-radius: 3em 1.8em;
+  border-bottom-left-radius: 3em 1.8em; */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 5.2vw;
+}
+
+.navbar img {
+  position: absolute;
+  left: calc((100vw - 9vw) / 2);
+  width: 9vw;
+  top: -0.8vw;
+  justify-content: center;
+
+}
+.navbar ul {
+  justify-content: flex-start;
+  display: flex;
+  gap: 2.7vw;
+  list-style: none;
+  margin-right: 3.25vw;
+  /* font-weight: 600; */
+  width: calc(100vw - 70vw);
+  padding: 0.4vw;
+  height: 3vh;
+
+  font-size: 100%;
+  font-weight: bold;
+}
+
+
+ a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.902);
+  /* padding: 0.2vw; */
+  /* height: 3vh; */
+}
+
+ li:hover {
+  background-color: rgba(0, 0, 0, 0.902);
+  color: #fbae26;
+  border-radius: 30% 5%;
+}
+li:focus{
+  background-color: rgba(0, 0, 0, 0.902);
+  color: #fbae26;
+  border-radius: 30% 5%;
+}
+
+.cc {
+  justify-content: left;
+  display: flex;
+  background-color: #262626;
+  color: aliceblue;
+  border-radius: 1.4vw;
+  padding: 0.4vw;
+  align-items: center;
+  /* padding: 0.4vh; */
+
+  width: 4.7vw;   /*media: 16 */
+  height: 3vh;
+  padding-right: 0.2vw;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h4 a:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+/* #black{
+  background-color: #1E1E1E;
+} */
+
+
+
+
+/* @media screen and (max-width:420px){
+  .cc{
+    width: 120%;
+    height: 3%;
+    background-color: #262626 ;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    padding-right: 10%;
+    font-size: 40%;
+
+  }
+  .navbar{
+    height: 6vh;
+  }
+  
+ a{
+  display: flex;
+    align-items: center;
+ }
+  li{
+    font-size: 10%;
+    
+   
+  }
+  .navbar img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.65%;
+  }
+} */
+
+
+
+
+ 
+
+@media screen and (min-width:562px ) and (max-width:820px){
+  .cc{
+    width: 120%;
+    background-color: #262626 ;
+    /* height: 100%; */
+    padding: 10%; 
+    padding-right: 10%;
+    font-size: 90%;
+
+
+  }
+  .navbar{
+    height: 10vh;
+  }
+ a{
+  display: flex;
+  align-items: center;
+ }
+  li{
+    font-size: 170%;
+   
+  }
+  .navbar img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5%;
+  }
+}
+
+
+@media screen and (min-width:502px) and (max-width:820px){
+  .cc{
+    width: 120%;
+    background-color: #262626 ;
+    height: 30%;
+    padding: 10%; 
+    padding-right: 10%;
+    font-size: 70% ;
+
+  }
+  .navbar{
+    height: 7vh;
+  }
+  
+ a{
+  display: flex;
+    align-items: center;
+ }
+  li{
+    font-size: 70%;
+    
+  }
+  .navbar img{
+    display: flex;
+    justify-content: center;
+     width: 8.5%; 
+  }
+} 
+ 
+@media screen and (max-width:420px){
+  .cc{
+    width: 120%;
+    height: 3%;
+    background-color: #262626 ;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    padding-right: 10%;
+    font-size: 60%;
+    width: 230%;
+
+  }
+  .navbar{
+    height: 5.5vh;
+  }
+  
+ a{
+  display: flex;
+    align-items: center;
+ }
+  li{
+    font-size: 45%;
+    
+   
+  }
+  .ul{
+    width: 60vw;
+  }
+  .navbar img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.65%;
+    width: 16%;
+  }
+}
+
+
+
+
+ 
+
+@media screen and (min-width:419px ) and (max-width:503px){
+  .cc{
+    width: 120%;
+    background-color: #262626 ;
+    /* height: 40%; */
+    padding: 10%; 
+    padding-right: 10%;
+    font-size: 60%;
+
+
+  }
+  .navbar{
+    height: 5vh;
+  }
+ a{
+  display: flex;
+  align-items: center;
+  /* width: 190%; */
+    display: flex;
+  justify-content: center;
+
+ }
+
+  li{
+    font-size: 60%;
+
+   
+  }
+  .navbar img{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2%;
+    width: 10%;
+  }
+  .navbar ul{
+    width: 40vw;
+  }
+}
+
