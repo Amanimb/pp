@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import Product_Card from "../component/Product_Card";
 import "../App.css";
 
-const Details = ({ product }) => {
+const Details = ({ product, search}) => {
   const { categorie } = useParams();
   console.log(categorie);
   return (
@@ -16,9 +16,9 @@ const Details = ({ product }) => {
       </div>
       <div className="list">
         {product
-          .filter((el) => el.categories == categorie)
+          .filter((val) => val.categories == categorie && val.name.toLowerCase().includes(search.toLowerCase())&& val.reference.toLowerCase().includes(search.toLowerCase()))
           .map((el) => (
-            <Product_Card product={el} />
+            <Product_Card product={el} search={search} />
           ))}
       </div>
     </div>

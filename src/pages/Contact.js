@@ -1,8 +1,37 @@
-import React from "react";
 import Trax from "../component/Trax";
+import React from "react";
 import "../style/Contact.css";
+import { useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ilyovkm",
+        "template_zupwahn",
+        form.current,
+        "wxt7s9z5qse4ZphVn"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  function handleClick() {
+    setTimeout(() => {
+      window.location.reload(false);
+    }, 1000);
+  }
   return (
     <div className="nos-p">
       <Trax title="Nos coordonnées" />
@@ -22,9 +51,9 @@ function Contact() {
           <div className="phone">
             <img src="../image_contact/appel.png" id="icone2" />
             <div id="num">
-              <h5>+216 20 265 877</h5>
+              <h5>+216 20 235 877</h5>
               <h5>+216 98 692 102</h5>
-              <h5>+216 27 950 913</h5>
+              <h5>+216 27 980 913</h5>
             </div>
           </div>
           <div className="mail">
@@ -40,24 +69,28 @@ function Contact() {
             <h5>Benzid Pieces Et Services "JCB & HMK"</h5>
           </div>
         </div>
+
         <div className="formulaire">
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <h2 id="nn">Contactez-nous</h2>
             <label>Nom et prénom</label>
             <br />
-
-            <input type="texte" id="input" />
+            <input type="texte" id="input" name="user_name" />
             <br />
             <label>Adresse mail</label>
             <br />
-
-            <input type="texte" id="input" />
+            <input type="texte" id="input" name="user_email" />
             <br />
+           
             <label>Message</label>
             <br />
-            <input type="texte" id="input_message" />
+            <div className="envoyer">
+            <textarea id="input_message" name="message" />
             <br />
-            <button>Envoyer</button>
+            <button type="submit" onClick={handleClick}>
+              Envoyer
+            </button>
+            </div>
           </form>
         </div>
       </div>

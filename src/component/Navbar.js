@@ -3,7 +3,10 @@ import "../style/Navbar.css";
 import { Link } from "react-router-dom";
 
 
-function Navbar() {
+function Navbar({setSearch,search}) {
+ 
+  
+  
   
   return (
     <div id="black">
@@ -24,10 +27,16 @@ function Navbar() {
         <Link to="/">
           <img src="/benzide_BPS.png" alt="logo" />
         </Link>
+        <span className="span">
+        <input type="text" placeholder="Recherche produit..." onChange={(e)=>setSearch(e.target.value)}
+ /> 
+      </span>
+           
         <Link to="/Contact">
           <h4 className="cc">Contact</h4>
         </Link>
       </div>
+      
     </div>
   );
 }

@@ -4,6 +4,8 @@ import "../style/Categorie_card.css";
 
 function Product_Card({product}) {
   return (
+
+
     <div className="card">
       <img src={product.image} className="im" />
       <h3 className="txt">{product.name}</h3>

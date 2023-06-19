@@ -5,7 +5,7 @@
 .card {
   width: 20vw;
   height: auto;
-  border: 0.2px solid #dedede;
+  border: 0.2px solid rgba(0, 0, 0, 0.902);
   margin: 1vw;
   /* margin-left: 1.5vw;
   margin-right: 1.5vw; */
@@ -14,13 +14,13 @@
   margin-bottom: 10vh;
 }
 .card:hover {
-  box-shadow: 0 0 15px #ccc;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.902);
   transform: translateY(-5px);
 }
 .im {
   margin-top: 0%;
   width: 100%;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.902);
   
 }
 
@@ -52,7 +52,7 @@
 } */
 #r{
   font-size: 100%;
-    color: #ffaa07;
+    color: rgba(0, 0, 0, 0.902);
     padding-bottom: 2vh;
 }
 .lii a {
