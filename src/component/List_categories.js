@@ -29,13 +29,13 @@ function List_categories({ product, search, categories }) {
       </Link>
       <Link to={`/Categories/GroupeHydraulique`} className="lii">
         <div className="card">
-          <img src="../image_categorie/hydro.jpg" className="im" />
+          <img src="../image_categorie/hydro.png" className="im" />
           <h3>Groupe Hydraulique</h3>{" "}
         </div>
       </Link>
-      <Link to={`/Categories/GroupeHydraulique`} className="lii">
+      <Link to={`/Categories/GroupeCabine`} className="lii">
         <div className="card">
-          <img src= "../image_categorie/ÉTIQUETTE.jpg" className="im" />
+          <img src= "../image_categorie/cabine2.jpg" className="im" />
           <h3>Groupe Cabine</h3>{" "}
         </div>
       </Link>
