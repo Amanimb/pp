@@ -3,6 +3,7 @@ import "../style/Categorie_card.css";
 
 
 
+
 function Trax({title}) {
   return (
     <div className='iii'>

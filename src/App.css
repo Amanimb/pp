@@ -1,5 +1,8 @@
+
+
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -20,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 2vw);
   color: white;
 }
 
@@ -60,5 +63,8 @@
       height: 60vh;
         border:none;
         margin: 3%;
+}
+body{
+  background-color: #c6c6bc;
 }
  

@@ -24,14 +24,14 @@ text-align: center;
 color: aliceblue;
 /* font-size: %; */
 flex-wrap: nowrap;
-width: 100vw;
+width: 100%;
 font-size: 200%;
 
 }
 .iii{
     margin: 0;
     height: 35vh;
-    /* /* background-image: url('../../public/trax.jpg'); * */
+    /* /* background-image: url('../../public/font.jpg'); * */
     background-image: url("../../public/trax.jpg");
     position: relative;
 }
