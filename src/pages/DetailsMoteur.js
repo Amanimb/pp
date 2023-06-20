@@ -3,9 +3,10 @@ import { Link, useParams } from "react-router-dom";
 import Product_Card from "../component/Product_Card";
 import "../App.css";
 
-const Details = ({ product, search}) => {
+const DetailsMoteur = ({ product, productPond, search}) => {
   const { categorie } = useParams();
   console.log(categorie);
+  
   return (
     <div>
       {" "}
@@ -15,8 +16,11 @@ const Details = ({ product, search}) => {
         </Link>
       </div>
       <div className="list">
-        {product
-          .filter((val) => val.categories == categorie && val.name.toLowerCase().includes(search.toLowerCase())&& val.reference.toLowerCase().includes(search.toLowerCase()))
+       
+          {product
+          .filter((el) => el.categories === " GROUPE MOTEUR "  && (
+            el?.name?.toLowerCase().includes(search.toLowerCase()) ||
+            el?.reference?.toLowerCase().includes(search.toLowerCase())))
           .map((el) => (
             <Product_Card product={el} search={search} />
           ))}
@@ -25,4 +29,4 @@ const Details = ({ product, search}) => {
   );
 };
 
-export default Details;
+export default DetailsMoteur;

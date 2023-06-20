@@ -34,7 +34,7 @@ function Categories({product,search}) {
     return (
       <div className="nos-p">
       <Trax title="Nos Produits" />
-      <List_categories categories={Categories} product={product} search={search} />
+      <List_categories  product={product} search={search} />
     </div>
     );
   }

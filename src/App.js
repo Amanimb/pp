@@ -6,7 +6,11 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Categories from "./pages/Categories";
-import Details from "./pages/Details";
+import DetailsPond from "./pages/DetailsPond";
+import DetailsBoite from "./pages/DetailsBoite";
+import DetailsMoteur from "./pages/DetailsMoteur";
+import DetailsHydraulique from "./pages/DetailsHydraulique";
+import DetailsCabine from "./pages/DetailsCabine";
 import { useState } from "react";
 
 function App() {
@@ -2071,6 +2075,7 @@ function App() {
   const [search, setSearch] = useState("") ;
   
   
+  
 
 
 
@@ -2083,14 +2088,33 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Categories" element={<Categories product={product} search={search}/>} />
           <Route path="/Contact" element={<Contact />} />
+         
           <Route
-            path="/Categories/:categorie"
-            element={<Details product={product} search={search} />}
+            path="/Categories/GroupePond"
+            element={<DetailsPond product={product} search={search} />}
           />
-
+           <Route
+            path="/Categories/GroupeBoite"
+            element={<DetailsBoite product={product} search={search} />}
+          />
+          <Route
+            path="/Categories/GroupeMoteur"
+            element={<DetailsMoteur product={product} search={search} />}
+          />
+          <Route
+            path="/Categories/GroupeHydraulique"
+            element={<DetailsHydraulique product={product} search={search} />}
+          />
+           <Route
+            path="/Categories/GroupeCabine"
+            element={<DetailsCabine product={product} search={search} />}
+          />
         </Routes>
+        
+
+        
       </div>
-     
+
       <iframe
         id="map"
         allowfullscreen=""
