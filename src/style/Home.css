@@ -77,6 +77,15 @@
     padding: 8%;
 
   }
+
+  #rrr img {
+    width: 80vw;
+  }
+  #lll {
+    width: 85%;
+      box-shadow: 0 0 10px #ccc;
+  
+  }
   #mm {
     display: flex;
     text-align: justify;
@@ -86,7 +95,7 @@
     align-items: center;
     width: 95%;
   }
-  
+ 
 }
 
 
@@ -101,6 +110,9 @@
     padding: 8%;
 
   }
+  #rrr img {
+    width: 80vw;
+  }
   #mm {
     display: flex;
     text-align: justify;
@@ -110,7 +122,12 @@
     align-items: center;
     width: 95%;
   }
+  #lll {
+    width: 85%;
+      box-shadow: 0 0 10px #ccc;
   
+  }
+ 
 }
 
 
