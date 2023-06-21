@@ -20,7 +20,7 @@
 
 .navbar img {
   position: absolute;
-  left: calc((100vw - 9vw) / 2);
+  left: calc((100vw - 19vw) / 2);
   width: 9vw;
   top: -0.8vw;
   justify-content: center;
@@ -137,6 +137,10 @@ h4 a:hover {
 
 
   }
+
+  .search{
+    width: 65%;
+  }
   .navbar{
     height: 10vh;
   }
@@ -152,6 +156,7 @@ h4 a:hover {
     display: flex;
     justify-content: center;
     margin-top: 0.5%;
+    width: 16%;
   }
 }
 
@@ -166,8 +171,11 @@ h4 a:hover {
     font-size: 70% ;
 
   }
+  .search{
+    width: 65%;
+  }
   .navbar{
-    height: 10vh;
+    height: 15vh;
   }
   
  a{
@@ -181,7 +189,7 @@ h4 a:hover {
   .navbar img{
     display: flex;
     justify-content: center;
-     width: 15.5%; 
+     width: 15%; 
   }
 } 
  
@@ -201,6 +209,9 @@ h4 a:hover {
   .navbar{
     height: 5.5vh;
   }
+  .search{
+    width: 55%;
+  }
   
  a{
   display: flex;
@@ -218,7 +229,7 @@ h4 a:hover {
     display: flex;
     justify-content: center;
     margin-top: 0.65%;
-    width: 16%;
+    width: 15%;
   }
 }
 
@@ -249,6 +260,9 @@ h4 a:hover {
   justify-content: center;
 
  }
+ .search{
+  width: 65%;
+}
 
   li{
     font-size: 60%;
@@ -259,6 +273,7 @@ h4 a:hover {
     display: flex;
     justify-content: center;
     margin-top: 0.2%;
+    margin-left: 5%;
     width: 10%;
   }
   .navbar ul{

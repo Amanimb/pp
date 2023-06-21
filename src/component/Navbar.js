@@ -28,7 +28,7 @@ function Navbar({setSearch,search}) {
           <img src="/benzide_BPS.png" alt="logo" />
         </Link>
         <span className="span">
-        <input type="text" placeholder="Recherche produit..." onChange={(e)=>setSearch(e.target.value)}
+        <input className="search" type="text" placeholder="Produit ..." onChange={(e)=>setSearch(e.target.value) }
  /> 
       </span>
            
